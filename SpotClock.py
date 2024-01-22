@@ -79,12 +79,12 @@ horas = Label(root, bg='#1d1d1d', fg='#000000',
               font=('Montserrat', 64, 'bold'))
 horas.pack(pady=2)
 
-client_id = 'ed4f712a53c34ae1b41bdf282ea79ed0' #change for your Spotify Id
-client_secret = '1a476e81f3aa4340b0aa9826e01c6ae4' #change for your Spotify secret
+client_id = 'your-client-id' #change for your Spotify Id
+client_secret = 'your-client-secret' #change for your Spotify secret
 redirect_uri = 'http://localhost:8888/callback'
 
-sp = Spotify(auth_manager=SpotifyOAuth(client_id='ed4f712a53c34ae1b41bdf282ea79ed0', #change for your Spotify Id
-                                               client_secret='1a476e81f3aa4340b0aa9826e01c6ae4', #change for your Spotify secret
+sp = Spotify(auth_manager=SpotifyOAuth(client_id='your-client-id', #change for your Spotify Id
+                                               client_secret='your-client-secret', #change for your Spotify secret
                                                redirect_uri='http://localhost:8888/callback',
                                                scope='user-read-currently-playing'))
 
